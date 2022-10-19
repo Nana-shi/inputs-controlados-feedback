@@ -1,7 +1,7 @@
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import MainPage from "./Components/MainPage/MainPage";
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -9,21 +9,21 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-`
+`;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-`
+`;
 function App() {
   return (
     <>
-    <GlobalStyles/>
-    <Container>
-      <Header/>
-      <MainPage/>
-      <Footer/>
-    </Container>
+      <GlobalStyles />
+      <Container>
+        <Header />
+        <MainPage />
+        <Footer />
+      </Container>
     </>
   );
 }
